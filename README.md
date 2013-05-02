@@ -30,7 +30,7 @@ from the router (and is not hard coded in your software).
 
 
 That simple json handler example from AtMegaWebServer is not implemented, because the aJson-lib includes a header
-thats on Due not available (<avr/pgmspace.h>).
+thats on Due not available (avr/pgmspace.h).
 
 
 _____________________
