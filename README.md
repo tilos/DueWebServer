@@ -34,8 +34,18 @@ from the router (and is not hard coded in your software).
 
 
 That simple json handler example from AtMegaWebServer is not implemented, because the aJson-lib includes a header
-thats on Due not available (avr/pgmspace.h).
+thats on Due not available (avr/pgmspace.h). You can use it like in AtMegaWebServer if you replace
 
+    #include <avr/pgmspace.h>
+  
+in aJSON.cpp with:
+
+    #ifndef __arm__
+    #include <avr/pgmspace.h>
+    #else
+    #define PROGMEM const
+    #define F(x) x
+    #endif
 
 _____________________
 External dependencies:
