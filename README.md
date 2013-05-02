@@ -12,7 +12,11 @@ The code is based on the TinyWebServer Library, Copyright (C) 2010 Ovidiu Predes
 It supports all file managing http-commands (GET, PUT, DELETE) and additional rename (non http (WebDAV): MOVE).
 Uploaded files and folders will get the actual local time. The clock starts automatical and will be set every 2 hours (can be freely selected
 by setting the TIME_REQU_INTV in UdpServices.cpp, even the difference to GMT with TimeOffset).
-How it works and looks like you can see here (using DuinoExplorer from http://duinoexplorer.codeplex.com/ as client).
+How it works and looks like you can see here:
+
+![screenshot](https://github.com/tilos/AWebServer/raw/master/AWS_in_Mozilla.png) 
+
+or here  (using DuinoExplorer from http://duinoexplorer.codeplex.com/ as client).
 
 ![screenshot](https://github.com/tilos/AWebServer/raw/master/explore_AWS.PNG) 
 
